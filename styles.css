@@ -1,23 +1,41 @@
-/* Base Styles (Mobile First) */
-body {
-  margin: 0;
-  padding: 0;
-
-  /* Default: Contain approach for mobile */
-  background: 
-    url('./nolen-band-home2.jpg') center/cover no-repeat;
-  height: 100vh;
+/* Container wrapping the background and buttons */
+.container {
+  position: relative;
   width: 100vw;
+  height: 100vh;
+
+  /* Ensure the background matches your body styles */
+  background: 
+    url('./nolen-band-home2.jpg') center/contain no-repeat,
+    url('./paper.png') repeat;
 }
 
-/* Desktop Styles (Apply for larger screens) */
-@media (min-width: 768px) {
-  body {
-    /* Layered approach for desktop */
-    background: 
-      url('./nolen-band-home2.jpg') center/contain no-repeat,
-      url('./paper.png') repeat;
-  }
+/* General button styles */
+.button {
+  position: absolute;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0); /* Transparent background */
+  border: none;
 }
 
+/* Button areas: Adjust top, left, width, height */
+.listen {
+  top: 30%; /* Adjust for your layout */
+  left: 20%;
+  width: 20%;
+  height: 10%;
+}
 
+.shows {
+  top: 50%; /* Adjust for your layout */
+  left: 25%;
+  width: 20%;
+  height: 10%;
+}
+
+.instagram {
+  top: 70%; /* Adjust for your layout */
+  left: 30%;
+  width: 20%;
+  height: 10%;
+}
