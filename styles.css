@@ -1,11 +1,11 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url('./nolen-band-home2.jpg'); /* Update with the correct path */
-  background-size: contain; /* Ensures the whole image fits within the viewport */
-  background-position: center; /* Centers the image */
-  background-repeat: no-repeat; /* Prevents tiling */
-  background-color: black; /* Adds black bars where the image doesn't fill */
+  background-color: #ffffff; /* Fallback in case the image doesn't load */
+  background-image: url('./paper.png'), url('./nolen-band-home2.jpg');
+  background-size: auto, contain; /* Tile the paper texture; contain the main image */
+  background-position: center, center; /* Center both the paper texture and the main image */
+  background-repeat: repeat, no-repeat; /* Tile the paper texture, but not the main image */
   height: 100vh; /* Full height of the viewport */
   width: 100vw; /* Full width of the viewport */
 }
