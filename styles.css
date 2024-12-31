@@ -5,7 +5,7 @@ body {
 
   /* Default: Contain approach for mobile */
   background: 
-    url('./nolen-band-home2.jpg') center/cover no-repeat;
+    url('./nolen-band-home2.jpg') cover no-repeat;
   height: 100vh;
   width: 100vw;
 }
