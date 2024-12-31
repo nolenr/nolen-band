@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url('/path-to-your-image.jpg'); /* Update with the correct path */
+  background-image: url('/nolen-band-home2.jpg'); /* Update with the correct path */
   background-size: contain; /* Ensures the whole image fits within the viewport */
   background-position: center; /* Centers the image */
   background-repeat: no-repeat; /* Prevents tiling */
