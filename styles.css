@@ -15,6 +15,7 @@ html, body {
 /* Buttons container (3 buttons across the top) */
 .buttons {
   display: flex;
+  border:none;
   justify-content: center;
   gap: 20px; /* Space between buttons */
   margin-top: 20px; /* Add spacing at the top */
