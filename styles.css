@@ -65,26 +65,6 @@ html, body {
   margin-top: 40px; /* Space between buttons and the image */
   max-width: 60%; /* Adjust based on how large you want "Nolen Guy" */
   height: auto; /* Maintain aspect ratio */
-  animation: float 30s infinite ease-in-out; /* Floating animation */
-}
-
-/* Floating Animation Keyframes */
-@keyframes float {
-  0% {
-    transform: translate(-50%, -50%) scale(1); /* Original size and position */
-  }
-  25% {
-    transform: translate(-48%, -52%) scale(1.05); /* Slight reposition and grow */
-  }
-  50% {
-    transform: translate(-50%, -50%) scale(1); /* Back to original */
-  }
-  75% {
-    transform: translate(-52%, -48%) scale(0.95); /* Opposite reposition and shrink */
-  }
-  100% {
-    transform: translate(-50%, -50%) scale(1); /* Reset to original */
-  }
 }
 
 
