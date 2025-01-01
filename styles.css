@@ -15,7 +15,6 @@ html, body {
 /* Buttons container (3 buttons across the top) */
 .buttons {
   display: flex;
-  border:none;
   justify-content: center;
   gap: 20px; /* Space between buttons */
   margin-top: 20px; /* Add spacing at the top */
@@ -25,9 +24,7 @@ html, body {
 .button {
   width: 120px; /* Fixed width for buttons */
   height: 50px; /* Fixed height for buttons */
-  background: rgba(0, 0, 0, 0); /* Transparent for "invisible" buttons */
   cursor: pointer;
-  border: 1px solid black; /* Optional: Add visible border for debugging */
 }
 
 /* Nolen Guy Image */
