@@ -28,7 +28,28 @@ html, body {
   cursor: pointer;
   border: none; /* No borders */
   outline: none; /* No focus outline */
+  transition: transform 0.2s ease, background-color 0.2s ease;
 }
+
+/* Animation on Click */
+.button:active {
+  animation: bounce 0.3s ease;
+  background-color: #005a9e; /* Optional: darken color */
+}
+
+/* Bounce Keyframes */
+@keyframes bounce {
+  0% {
+    transform: scale(1); /* Start at normal size */
+  }
+  50% {
+    transform: scale(1.1); /* Grow slightly */
+  }
+  100% {
+    transform: scale(1); /* Return to normal size */
+  }
+}
+
 
 /* Booking image styles */
 .booking-image {
