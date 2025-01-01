@@ -60,18 +60,12 @@ html, body {
   cursor: pointer; /* Pointer cursor to indicate it's clickable */
 }
 
-
-/* Nolen Guy Styling */
+/* Nolen Guy Image */
 .nolen-guy {
-  position: absolute; /* Allow free movement */
-  top: 50%; /* Center vertically */
-  left: 50%; /* Center horizontally */
-  transform: translate(-50%, -50%); /* Perfect centering */
-  width: 300px; /* Adjust size as needed */
-  z-index: 10; /* Keep it above other elements, if necessary */
-  border: 2px solid transparent; /* Retain any border styles */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Retain shadows */
-  animation: float 3s infinite ease-in-out; /* Floating animation */
+  margin-top: 40px; /* Space between buttons and the image */
+  max-width: 60%; /* Adjust based on how large you want "Nolen Guy" */
+  height: auto; /* Maintain aspect ratio */
+  animation: float 30s infinite ease-in-out; /* Floating animation */
 }
 
 /* Floating Animation Keyframes */
