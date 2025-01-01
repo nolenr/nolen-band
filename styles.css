@@ -22,7 +22,7 @@ html, body {
 
 /* Button styles */
 .button {
-  width: 25%; /* Set a fixed or responsive width */
+  width: 30%; /* Set a fixed or responsive width */
   height: auto; /* Let the browser calculate the height based on the original image aspect ratio */
   background: rgba(0, 0, 0, 0); /* Transparent background */
   cursor: pointer;
