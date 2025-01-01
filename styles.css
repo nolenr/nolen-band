@@ -4,7 +4,7 @@ html, body {
   padding: 0;
   width: 100%;
   height: 100%;
-  background: #fdfdfd; /* Paper-like blank background */
+  background: url('./paper.png') center/cover no-repeat; /* Paper-like background */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,3 +35,16 @@ html, body {
   max-width: 60%; /* Adjust based on how large you want "Nolen Guy" */
   height: auto; /* Maintain aspect ratio */
 }
+
+
+@media (max-width: 768px) {
+  .buttons {
+    flex-direction: column; /* Stack buttons vertically on smaller screens */
+    gap: 10px;
+  }
+
+  .nolen-guy {
+    max-width: 80%; /* Scale down "Nolen Guy" further for smaller devices */
+  }
+}
+
