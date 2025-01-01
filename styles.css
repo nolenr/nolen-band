@@ -4,48 +4,40 @@ html, body {
   padding: 0;
   width: 100%;
   height: 100%;
-  background: #fdfdfd; /* Blank paper-like background */
-  background-size: cover; /* Optional if using a texture */
+  background: #fdfdfd; /* Light paper-like background */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Align content to the top */
 }
 
 /* Container styles */
 .container {
   position: relative;
   width: 100%;
-  height: 100%;
+  max-width: 1200px; /* Keep content centered on larger screens */
+  text-align: center;
+  margin-top: 20px; /* Spacing at the top */
+}
+
+/* Button Row */
+.button-row {
   display: flex;
   justify-content: center;
-  align-items: center;
-  overflow: hidden;
+  gap: 20px; /* Spacing between buttons */
+  margin-bottom: 40px; /* Space between buttons and Nolen Guy */
+}
+
+.button {
+  cursor: pointer;
+  width: 150px; /* Adjust button width */
+  height: auto; /* Maintain aspect ratio */
 }
 
 /* Nolen Guy Image */
 .nolen-guy {
-  position: relative;
-  max-width: 80%; /* Adjust size based on design */
+  display: block;
+  margin: 0 auto;
+  max-width: 50%; /* Adjust size based on design */
   height: auto; /* Maintain aspect ratio */
-}
-
-/* Button styles */
-.button {
-  position: absolute;
-  cursor: pointer;
-  width: 10%; /* Adjust size for buttons */
-  height: auto; /* Maintain aspect ratio */
-}
-
-/* Positioning the buttons */
-.listen {
-  top: 20%; /* Adjust based on layout */
-  left: 30%;
-}
-
-.show {
-  top: 35%; /* Adjust based on layout */
-  left: 30%;
-}
-
-.instagram {
-  top: 50%; /* Adjust based on layout */
-  left: 30%;
 }
