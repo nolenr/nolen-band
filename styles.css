@@ -9,7 +9,6 @@ html, body {
 /* Container styles */
 .container {
   position: relative;
-  width: 100vw; /* Match the viewport width */
   height: 100vh; /* Match the viewport height */
   background: 
     url('./nolen-band-home2.jpg') center/contain no-repeat,
