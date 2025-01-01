@@ -19,6 +19,7 @@ html, body {
 .button {
   position: absolute;
   cursor: pointer;
+  border: 2px solid blue;
   background: rgba(0, 0, 0, 0); /* Transparent, clickable area */
   width: 20%; /* Adjust as needed */
   height: 10%;
