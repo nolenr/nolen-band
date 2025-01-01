@@ -39,10 +39,6 @@ html, body {
 
 
 @media (max-width: 768px) {
-  .buttons {
-    flex-direction: column; /* Stack buttons vertically on smaller screens */
-    gap: 10px;
-  }
 
   .nolen-guy {
     max-width: 80%; /* Scale down "Nolen Guy" further for smaller devices */
