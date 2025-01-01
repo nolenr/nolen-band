@@ -20,15 +20,6 @@ html, body {
   margin-top: 20px; /* Add spacing at the top */
 }
 
-/* Booking image styles */
-.booking-image {
-  display: block; /* Ensures it's treated as a block element for spacing */
-  margin: 10px auto 0; /* Space above the image, center align */
-  width: 120px; /* Set a width to keep it consistent with buttons */
-  height: auto; /* Maintain aspect ratio */
-  cursor: pointer; /* Pointer cursor to indicate it's clickable */
-}
-
 /* Button styles */
 .button {
   width: 30%; /* Set a fixed or responsive width */
@@ -39,6 +30,14 @@ html, body {
   outline: none; /* No focus outline */
 }
 
+/* Booking image styles */
+.booking-image {
+  display: block; /* Ensures it's treated as a block element for spacing */
+  margin: 40px auto 0; /* Space above the image, center align */
+  width: 90%; /* Set a width to keep it consistent with buttons */
+  height: auto; /* Maintain aspect ratio */
+  cursor: pointer; /* Pointer cursor to indicate it's clickable */
+}
 
 /* Nolen Guy Image */
 .nolen-guy {
