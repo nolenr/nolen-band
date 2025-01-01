@@ -1,42 +1,78 @@
-/* Ensure the parent (body) spans the full viewport */
+/* Ensure html and body span the full viewport */
 html, body {
   margin: 0;
   padding: 0;
-  width: 100%; /* Full width of the screen */
-  height: 100%; /* Full height of the screen */
+  width: 100%;
+  height: 100%;
 }
 
-/* Container styles */
+/* Mobile-first styles: Contain background for smaller screens */
+body {
+  background: 
+    url('./nolen-band-home2.jpg') center/cover no-repeat; /* Cover approach for mobile */
+  height: 100vh; /* Full height of the viewport */
+  width: 100vw; /* Full width of the viewport */
+}
+
+/* Container for relative positioning */
 .container {
   position: relative;
-  height: 100vh; /* Match the viewport height */
-  background: 
-    url('./nolen-band-home2.jpg') center/contain no-repeat,
-    url('./paper.png') repeat;
+  width: 100%;
+  height: 100%;
 }
 
 /* Invisible button styles */
 .button {
   position: absolute;
   cursor: pointer;
-  border: 2px solid blue;
-  background: rgba(0, 0, 0, 0); /* Transparent, clickable area */
-  width: 20%; /* Adjust as needed */
-  height: 10%;
+  background: rgba(0, 0, 0, 0); /* Transparent for clickable area */
+  width: 33%; /* Default width for mobile */
+  height: 20%; /* Default height for mobile */
 }
 
-/* Specific button positions */
+/* Specific button positions for mobile */
 .listen {
-  top: 30%;
-  left: 20%;
+  top: 5%;
+  left: 0%;
 }
 
 .shows {
-  top: 50%;
-  left: 25%;
+  top: 5%;
+  left: 33%;
 }
 
 .instagram {
-  top: 70%;
-  left: 30%;
+  top: 5%;
+  left: 67%;
+}
+
+/* Desktop-specific styles */
+@media (min-width: 768px) {
+  body {
+    background: 
+      url('./nolen-band-home2.jpg') center/contain no-repeat, /* Main image */
+      url('./paper.png') repeat; /* Paper texture */
+  }
+
+  /* Scale buttons for desktop */
+  .button {
+    width: 10%;
+    height: 20%;
+  }
+
+  /* Adjust button positions for desktop */
+  .listen {
+    top: 10%;
+    left: 22%;
+  }
+
+  .shows {
+    top: 10%;
+    left: 40%;
+  }
+
+  .instagram {
+    top: 10%;
+    left: 70%;
+  }
 }
