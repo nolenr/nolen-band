@@ -1,41 +1,42 @@
-/* Container wrapping the background and buttons */
+/* Ensure the parent (body) spans the full viewport */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%; /* Full width of the screen */
+  height: 100%; /* Full height of the screen */
+}
+
+/* Container styles */
 .container {
   position: relative;
-  width: 100vw;
-  height: 100vh;
-
-  /* Ensure the background matches your body styles */
+  width: 100vw; /* Match the viewport width */
+  height: 100vh; /* Match the viewport height */
   background: 
     url('./nolen-band-home2.jpg') center/contain no-repeat,
     url('./paper.png') repeat;
 }
 
-/* General button styles */
+/* Invisible button styles */
 .button {
   position: absolute;
   cursor: pointer;
-  background: rgba(0, 0, 0, 0); /* Transparent background */
-  border: none;
+  background: rgba(0, 0, 0, 0); /* Transparent, clickable area */
+  width: 20%; /* Adjust as needed */
+  height: 10%;
 }
 
-/* Button areas: Adjust top, left, width, height */
+/* Specific button positions */
 .listen {
-  top: 30%; /* Adjust for your layout */
+  top: 30%;
   left: 20%;
-  width: 20%;
-  height: 10%;
 }
 
 .shows {
-  top: 50%; /* Adjust for your layout */
+  top: 50%;
   left: 25%;
-  width: 20%;
-  height: 10%;
 }
 
 .instagram {
-  top: 70%; /* Adjust for your layout */
+  top: 70%;
   left: 30%;
-  width: 20%;
-  height: 10%;
 }
